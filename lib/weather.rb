@@ -11,6 +11,6 @@ class Weather
 	end
 
 	def sample
-		puts weather.sample
+		weather.sample
 	end
 end  

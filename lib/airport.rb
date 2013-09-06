@@ -5,7 +5,7 @@
 
 class Airport
 
-	attr_accessor :plane, :weather
+	attr_accessor :planes, :weather
 	attr_reader :max_capacity
 
 	def initialize(plane=nil)
@@ -20,9 +20,9 @@ class Airport
 
 	def has_spaces
 		if @planes.length < @max_capacity
-			puts true
+			true
 		else
-			puts false
+			false
 		end
 	end
 

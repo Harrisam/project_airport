@@ -6,18 +6,18 @@ describe 'Airport' do
 
 	it 'has planes' do
 		planes = double :planes
-		airport.plane
+		airport.planes
 		expect(airport).to have_planes
 	end
 
 	it 'has spaces' do
-		@plane = ["plane"] * 1
+		airport.planes = ["plane"] * 1
 		airport.has_spaces
 		expect(airport.has_spaces).to be_true
 	end
 
 	it 'full!' do
-		@plane = ["plane"] * 6
+		airport.planes = ["plane"] * 6
 		airport.full!
 		expect(airport.full!).to be_true
 	end

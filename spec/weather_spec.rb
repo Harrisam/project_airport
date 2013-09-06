@@ -5,7 +5,7 @@ describe Weather do
 	let (:weather)  {Weather.new}
 
 	it 'sample' do
-		expect(weather.sample).to be_nil
+		expect(['sunny', 'stormy'].include? weather.sample).to be_true
 	end
 
 end
